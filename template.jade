@@ -1,0 +1,21 @@
+mixin head(title, description)
+	head
+		meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+		meta(charset='utf-8')
+		meta(name='author', content='50/50')
+		link(rel='stylesheet', href='style/style.css')
+		title #{title}
+		meta(name='description', content='#{description}')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		block
+mixin content 
+	body
+		header
+			include partials/_header.jade
+		block
+		footer
+			include partials/_footer.jade
+
+doctype html
+html
+	block page

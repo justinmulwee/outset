@@ -10,7 +10,7 @@
     <script>
       $(document).ready(function(){ 
       	var url = window.location.href;
-      	$('nav a').filter(function() {
+      	$('nav#primary a').filter(function() {
       	    return this.href == url;
       	}).addClass('current');
       })
@@ -20,12 +20,9 @@
   </head>
   <body>
     <header>
-      <p>shared header</p>
-      <nav><a href="index.html">current link</a><a href="http://google.com">some other link</a></nav>
+      <nav id="primary"><a href="index.html">Home</a></nav>
     </header>
-    <h1>page content NEW</h1>
-    <footer>
-      <p>shared footer</p>
-    </footer>
+    <h1>page content</h1>
+    <footer></footer>
   </body>
 </html>

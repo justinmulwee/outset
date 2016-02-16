@@ -15,6 +15,8 @@ mixin content
 		block
 		footer
 			include partials/_footer.jade
+mixin a(url, name)
+	a(href="#{url}.html") #{name}
 
 doctype html
 html

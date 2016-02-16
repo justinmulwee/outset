@@ -6,14 +6,24 @@
     <meta name="author" content="Justin">
     <link rel="stylesheet" href="../css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script>
+      $(document).ready(function(){ 
+      	var url = window.location.href;
+      	$('nav a').filter(function() {
+      	    return this.href == url;
+      	}).addClass('current');
+      })
+    </script>
     <title>Page title here</title>
     <meta name="description" content="Page description goes here."/>
   </head>
   <body>
     <header>
       <p>shared header</p>
+      <nav><a href="index.html">current link</a><a href="http://google.com">some other link</a></nav>
     </header>
-    <h1>page content</h1>
+    <h1>page content NEW</h1>
     <footer>
       <p>shared footer</p>
     </footer>

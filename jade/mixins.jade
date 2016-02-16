@@ -1,3 +1,11 @@
 mixin meta(title, description)
 	title #{title}
 	meta(name='description', content='#{description}')
+mixin highlight-current-nav-link
+	script.
+		$(document).ready(function(){ 
+			var url = window.location.href;
+			$('nav a').filter(function() {
+			    return this.href == url;
+			}).addClass('current');
+		})

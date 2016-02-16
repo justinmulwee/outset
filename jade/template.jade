@@ -8,13 +8,17 @@ mixin head(title, description)
 		meta(name='description', content='#{description}')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		block
+mixin header
+	header
+		include partials/_header.jade
+mixin footer
+	footer
+		include partials/_footer.jade
 mixin content 
 	body
-		header
-			include partials/_header.jade
+		+header
 		block
-		footer
-			include partials/_footer.jade
+		+footer
 mixin a(url, name)
 	a(href="#{url}.html") #{name}
 

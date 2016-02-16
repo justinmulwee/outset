@@ -1,6 +1,5 @@
-extends template.jade
-block page
-	+head("Page Title Here", "Meta Description Here")
-	+content
-		h1 this is a heading
-		p page content here.
+extends layout.jade
+block head
+	+meta("Page title here", "Page description goes here.")
+block content
+	h1 This is some page content.

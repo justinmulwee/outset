@@ -1,0 +1,17 @@
+include mixins.jade
+doctype html
+html
+	head
+		meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+		meta(charset='utf-8')
+		meta(name='author', content='Justin')
+		link(rel='stylesheet', href='../css/style.css')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		block head
+			+meta("Untitled", "no description")
+	body
+		header
+			p this is a simple header
+		block content
+		footer
+			p this is a simple footer
